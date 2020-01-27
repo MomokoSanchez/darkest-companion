@@ -64,6 +64,8 @@ h1 {
 .copyrights {
   text-align: center;
   font-size: 12px;
+  width: 100%;
+  float: left;
 }
 
 .copyrights a:visited, .copyrights a {
@@ -124,14 +126,17 @@ h1 {
 
 .curio {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 10px 0 30px 0;
   align-items: center;
+  width: calc(50% - 2px);
+  border: 1px solid;
+  height: 250px;
+  float: left;
 }
 
 .curio-cell {
   flex: 0 1 auto;
-  width: 160px;
   margin: 5px 0;
 }
 
@@ -177,7 +182,7 @@ h1 {
 }
 
 .location-tips {
-  width: 500px;
+  width: 100%;
 }
 
 .tips-category-list {

@@ -11,6 +11,12 @@ function renderTip(tip, index) {
   </div>
 }
 
+function renderTipText(tips) {
+  tips.map(tip => {
+      return <p>{tip}</p>
+    })
+}
+
 function renderTipsCategory(category, tips) {
   if (!tips.length) {
     return null;
@@ -27,7 +33,7 @@ function renderTipsCategory(category, tips) {
   </div>
 }
 
-const tipCategories = ['effective', 'ineffective', 'dangers'];
+const tipCategories = ['enemies', 'heroes', 'provisions','effective', 'ineffective', 'dangers'];
 
 export function LocationTips({selectedLocation}) {
   const tips = getTipsForLocation(selectedLocation);
