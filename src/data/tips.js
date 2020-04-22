@@ -111,7 +111,7 @@ const tips = {
     effective: [
       {
         label: 'Bleed',
-        details: '-low resist'
+        details: 'Low resist'
       },
       {
         label: 'Scouting',
@@ -275,7 +275,7 @@ weald: {
     ],
     ineffective: [
       {
-        label: 'Blight',
+        label: 'Bleed',
         details: 'High resist'
       }
     ],
